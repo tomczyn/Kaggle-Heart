@@ -5,8 +5,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.tomczyn.ui.greeting.greetingGraph
-import com.tomczyn.ui.greeting.greetingRoute
+import com.tomczyn.ui.main.mainGraph
+import com.tomczyn.ui.main.greetingRoute
 
 @Composable
 fun KaggleHeartNavHost(
@@ -18,7 +18,7 @@ fun KaggleHeartNavHost(
         navController = navController,
         startDestination = greetingRoute,
     ) {
-        greetingGraph()
+        mainGraph()
     }
 }
 
